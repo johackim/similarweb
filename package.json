@@ -1,0 +1,48 @@
+{
+  "name": "similarweb",
+  "version": "0.1.0",
+  "description": "CLI tool to get similarweb traffic ranks",
+  "homepage": "https://github.com/johackim/similarweb",
+  "files": [
+    "dist/similarweb.js"
+  ],
+  "bin": {
+    "similarweb": "dist/similarweb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johackim/similarweb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johackim/similarweb/issues"
+  },
+  "dependencies": {
+    "commander": "^2.20.3",
+    "isomorphic-fetch": "^3.0.0",
+    "ora": "^2.1.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "jest": "^29.1.1"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "prepublish": "npm run build",
+    "start": "node src/similarweb.js",
+    "build": "babel src/ --compact true --out-dir dist/",
+    "lint": "eslint",
+    "test": "jest"
+  },
+  "author": "johackim",
+  "license": "GPL-3.0",
+  "keywords": [
+    "similarweb",
+    "similarweb.com",
+    "rank"
+  ]
+}
